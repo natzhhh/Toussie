@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif:400,700);
+/************* 
+Base
+**************/
+html, body {
+  height: 100%;
+ 
+}
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle at 30% 86%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 55% 100%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 40% 75%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 7% 99%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 69% 76%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 2% 35%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 14% 48%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 28% 87%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 65% 14%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 51% 36%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 6% 93%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), linear-gradient(135deg, #17e9ad, #1d18d0);
+  }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type=submit] {
+  border: none;
+  font-size: 1em;
+}
+
+/************* 
+ Layout
+**************/
+
+
+/************* 
+Modules
+**************/
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: 225px;
+  height: 250px;
+  border-radius: 2px;
+  background: rgba(238, 238, 238, 0.9);
+}
+.form__label {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.form__input {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  width: 200px;
+  font-size: 11px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #b19a9a;
+  background: transparent;
+}
+.form__submit {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 13px;
+  color: white;
+  background: #b19a9a;
+}
+
+
+
+
+/************* 
+states
+**************/
+.is-btn-hovered:hover {
+  background: #906f6f;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.6);
+    background: url(https://dl.dropboxusercontent.com/u/11530795/background_image.jpg), -webkit-linear-gradient(230deg, rgba(70, 130, 180, 0.5), black);
+    background: url(https://dl.dropboxusercontent.com/u/11530795/background_image.jpg), linear-gradient(-140deg, rgba(70, 130, 180, 0.5), black);
+    background-blend-mode: darken;
+    border-radius: 3px;
+  }
+  .form-signin h1 {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  .form-signin form {
+    padding: 15px;
+  }

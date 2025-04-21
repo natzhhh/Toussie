@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+   
+<head>
+   <meta charset="utf-8"  type="text/html">
+<title>Toussie Board </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<link rel="stylesheet" href="css/newcheetoss.css" >
+<script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+   
+<div class="row">
+   <div   class="col-6 col-s-9">
+  <div id="board" class="board">
+    <div id="10" class="piece-square light-square">&#10035;</div>
+    <div id="A2" class="piece-square light-square"></div>
+    <div id="9" class="piece-square light-square" >&#9822;</div>
+    <div id="A4" class="piece-square light-square"></div>
+    <div id="8" class="piece-square light-square" style='font-size:50px;'>&#8962</div>
+    <div id="A6" class="piece-square light-square"></div>
+    <div id="7" class="piece-square teal-square" >&#9822;</div>
+    <div id="A8" class="piece-square light-square"></div>
+    <div id="6" class="piece-square light-square">&#10035;</div>
+
+    <div id="B1" class="piece-square light-square"></div>
+    <div  id="B2" class="piece-square dark-square"></div>
+    <div id="B3" class="piece-square dark-square" ></div>
+    <div id="B4" class="piece-square dark-square"></div>
+    <div id="B5" class="piece-square dark-square"></div>
+    <div id="B6" class="piece-square dark-square"></div>
+    <div id="B7"class="piece-square light-square" style='font-size:50px;'>&#8609;</div>
+    <div id="B8" class="piece-square dark-square"></div>
+    <div id="B9" class="piece-square light-square"></div>
+
+    <div id="11" class="piece-square teal-square" >&#9822;</div>
+    <div id="C2" class="piece-square green-square" style='font-size:50px;'>&#8608;</div>
+    <div id="18" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+    <div  id="C4" class="piece-square green-square"></div>
+    <div id="19" class="piece-square green-square">&#x1F6AA;</div>
+    <div id="C6" class="piece-square green-square"></div>
+    <div id="20" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+    <div id="C8" class="piece-square dark-square" ></div>
+    <div id="5" class="piece-square light-square">&#9822;</div>
+
+    <div id="D1" class="piece-square light-square"></div>
+    <div id="D2" class="piece-square dark-square"></div>  
+    <div  id="D3"class="piece-square green-square"></div>
+    <div id="D4" class="piece-square purple-square"></div>
+    <div id="D5" class="piece-square gold-square"></div>
+    <div id="D6" class="piece-square purple-square"></div>
+    <div id="D7" class="piece-square green-square"></div>
+    <div id="D8" class="piece-square dark-square"></div>
+    <div id="D9" class="piece-square light-square"></div>
+
+    <div id="12" class="piece-square light-square"style='font-size:50px;'>&#8962;</div>
+    <div id="E2" class="piece-square dark-square"></div>  
+    <div id="17" class="piece-square green-square">&#x1F6AA;</div>
+    <div id="E4" class="piece-square gold-square"></div>
+    <div id="24" class="piece-square gold-square">&#128081;</div>
+    <div id="E6" class="piece-square gold-square"></div>
+    <div id="21" class="piece-square green-square">&#x1F6AA;</div>
+    <div id="E8" class="piece-square dark-square"></div>
+    <div id="4" class="piece-square light-square" style='font-size:50px;'>&#8962;</div>
+
+    <div  id="F1" class="piece-square light-square"></div>
+    <div id="F2"  class="piece-square dark-square"></div>  
+    <div id="F3" class="piece-square green-square"></div>
+    <div id="F4" class="piece-square purple-square"></div>
+    <div id="F5" class="piece-square gold-square"></div>
+    <div id="F6" class="piece-square purple-square"></div>
+    <div id="F7" class="piece-square green-square"></div>
+    <div id="F8" class="piece-square dark-square"></div>
+    <div id="F9" class="piece-square light-square"></div>
+
+    <div id="13" class="piece-square light-square">&#9822;</div>
+    <div id="G2" class="piece-square dark-square" ></div>
+    <div id="16" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+    <div id="G4" class="piece-square green-square"></div>
+    <div id="23" class="piece-square green-square">&#x1F6AA;</div>
+    <div id="G6" class="piece-square green-square"></div>
+    <div id="22"class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+    <div  id="G8" class="piece-square green-square" style='font-size:50px;'>&#8606;</div>
+    <div id="3" class="piece-square teal-square">&#9822;</div>
+
+    <div id="H1" class="piece-square light-square"></div>
+    <div id="H2" class="piece-square dark-square"></div>
+    <div id="H3" class="piece-square light-square" style='font-size:50px;'>&#8607;</div>
+    <div id="H4" class="piece-square dark-square"></div>
+    <div id="H5" class="piece-square dark-square"></div>
+    <div id="H6" class="piece-square dark-square"></div>
+    <div id="H7" class="piece-square dark-square" ></div>
+    <div id="H8" class="piece-square dark-square"></div>
+    <div id="H9" class="piece-square light-square"></div>
+
+    <div id="14" class="piece-square light-square">&#10035;</div>
+    <div id="I2" class="piece-square light-square"></div>
+    <div id="15" class="piece-square teal-square" >&#9822;</div>
+    <div id="I4" class="piece-square light-square"></div>
+    <div id="0" class="piece-square light-square"style='font-size:50px;'>&#8962;</div>
+    <div id="I6" class="piece-square light-square"></div>
+    <div id="1" class="piece-square light-square" >&#9822;</div>
+    <div id="I8" class="piece-square light-square"></div>
+    <div id="2" class="piece-square light-square">&#10035;</div>
+  </div>
+  </div>
+
+
+
+  <div class ="col-3 col-s-12">
+    <div class="tossContainer">
+ 
+      <div class="coin" id="coin">
+      <div class="heads">
+         <img alt="head of coin" src="css/image/head.png">
+      </div>
+      <div class="tails">
+         <img alt="tail of coin" src="css/image/tails.png">
+      </div>
+    </div>
+  <div class="coin" id="coin2">
+      <div class="heads">
+         <img alt="head of coin" src="css/image/head.png">
+      </div>
+      <div class="tails">
+         <img alt="tail of coin" src="css/image/tails.png">
+      </div>
+  </div>
+  <div class="coin" id="coin3">
+      <div class="heads">
+         <img alt="head of coin"src="css/image/head.png">
+      </div>
+      <div class="tails">
+         <img alt="tail of coin"src="css/image/tails.png">
+      </div>
+  </div>
+  <div class="coin" id="coin4">
+      <div class="heads">
+         <img alt="head of coin" src="css/image/head.png">
+      </div>
+      <div class="tails">
+         <img alt="tail of coin" src="css/image/tails.png">
+      </div>
+  </div>
+  
+  <div class=stats>
+      <p id="heads-count">Heads: 0</p>
+      <p id="tails-count">Tails: 0</p>
+   </div>
+   <div id="moves"class=stats></div>
+   <div class="tossButtons">
+      <button class="tossButton" id="flip-button"  onclick="flipCoins()">Flip Coins</button>
+      <button class="tossButton" id="reset-button">Reset</button>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+<script src="js/tosser.js"></script>
+
+</body>
+</html>

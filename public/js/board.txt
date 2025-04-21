@@ -1,0 +1,4 @@
+let i5= document.querySelector("#I5");
+let a5 = document.querySelector("#A5");
+let e1= document.querySelector("#E1");
+let e9 = document.querySelector("#E9");

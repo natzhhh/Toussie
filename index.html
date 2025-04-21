@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+    <title>Tousie</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait"/>
+    
+    
+    <link rel="stylesheet" href="css/newcheetoss.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="allthethings" >
+        <div class="logo-container">
+           <h1 class="Logos">TOUSIE</h1>
+           <p class="para">Adele's Game</p>
+        </div>
+       <div class="container"> 
+    
+       <div id="left"></div>
+       <div id="single" class="one"  onclick="twentyFiveBalls(35)" ><p>Play with House</p></div>
+
+       <div id="multiplayer" class="two" onclick="multyPlay()"><p>Play with Friends</p></div>
+       <div id="help" class="four" onclick="showAndHide()"><p>Help</p>
+         <div id="SectionName" style="display:none">Tousie:  is a board game, which players play to get in the inner place or the throne first  using four coins as their lucky number for moving forward to reach to the inner throne. Furthermore, the four coins have five probabilities, which is 1: "Head Head Head Head"  makes the player to move eight step forward, 2:"Head  Head Head Tail" makes the player to return back one step it means Toussi, 3:"Head Head Tail Tail" makes the player to move forward two step, 4:"Head Tail Tail Tail" makes the player to move forward three step, and 5: "Tail Tail Tail Tail" makes the player to move four step forward.
+            Beside this the game has rules 1: if players pass or just get other players position, the one who were standing at the position will return back to zero or his Home. However if the players were staying at his home or other players home, it has a privillage to not be killed, and it will stay as it is. 2: The one who reaches the throne first is the winner, and it will continue untill one player left, so this one will be the looser.  3: When players get four("Tail Tail Tail Tail") or eight("Head Head Head Head"), they will get extra life, one extra life for the former and two extra life for the later, which makes them to try their chance again apart from their turn.
+      </div></div>
+
+        <div id="right"></div>
+
+        <div id="exit"></div>
+        <div id="circle"></div>
+
+      </div>
+ </div>
+ <div class="multyPlayerScreen" id="playingForm" >
+        <div id="multyPlayerScreen"class="layout">
+
+          <div id="firstLayout">
+           <main class="form-signin">
+    
+            <h1 class="h3">Room Form</h1>
+    
+            <form id="roomForm" action="" class="form">
+               <fieldset>
+              <label class="form__label" for="room">ROOM</label>
+              <input class="form__input" type="text" id="inputCRoom" placeholder="Enter room name " required />
+               </fieldset>
+               <fieldset>
+               <label class="form__label" for="room">USERRNAME</label>
+              <input class="form__input" type="text" id="playingName" placeholder="Enter username" required />
+            </fieldset>
+           
+              <input class="form__submit is-btn-hovered" type="submit" value="CREATE/JOIN">
+            </form>
+           </main>
+         </div>
+        <div id="secondLayout" class="form-signin">
+          <div id="gameStarted"> </div>
+          <div id ="newMember"></div>
+          <button id="ready" class="two">Ready</button>
+       </div>
+    
+       </div>
+        
+  </div>
+     <div id="start"> 
+
+      <div class="row">
+        <div   class="col-6 col-s-9">
+       <div id="board" class="board">
+         <div id="10" class="piece-square light-square">&#10035;</div>
+         <div id="A2" class="piece-square light-square"></div>
+         <div id="9" class="piece-square light-square" >&#9822;</div>
+         <div id="A4" class="piece-square light-square"></div>
+         <div id="8" class="piece-square light-square" style='font-size:50px;'>&#8962</div>
+         <div id="A6" class="piece-square light-square"></div>
+         <div id="7" class="piece-square teal-square" >&#9822;</div>
+         <div id="A8" class="piece-square light-square"></div>
+         <div id="6" class="piece-square light-square">&#10035;</div>
+     
+         <div id="B1" class="piece-square light-square"></div>
+         <div  id="B2" class="piece-square dark-square"></div>
+         <div id="B3" class="piece-square dark-square" ></div>
+         <div id="B4" class="piece-square dark-square"></div>
+         <div id="B5" class="piece-square dark-square"></div>
+         <div id="B6" class="piece-square dark-square"></div>
+         <div id="B7"class="piece-square light-square" style='font-size:50px;'>&#8609;</div>
+         <div id="B8" class="piece-square dark-square"></div>
+         <div id="B9" class="piece-square light-square"></div>
+     
+         <div id="11" class="piece-square teal-square" >&#9822;</div>
+         <div id="C2" class="piece-square green-square" style='font-size:50px;'>&#8608;</div>
+         <div id="18" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+         <div  id="C4" class="piece-square green-square"></div>
+         <div id="19" class="piece-square green-square">&#x1F6AA;</div>
+         <div id="C6" class="piece-square green-square"></div>
+         <div id="20" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+         <div id="C8" class="piece-square dark-square" ></div>
+         <div id="5" class="piece-square light-square">&#9822;</div>
+     
+         <div id="D1" class="piece-square light-square"></div>
+         <div id="D2" class="piece-square dark-square"></div>  
+         <div  id="D3"class="piece-square green-square"></div>
+         <div id="D4" class="piece-square purple-square"></div>
+         <div id="D5" class="piece-square gold-square"></div>
+         <div id="D6" class="piece-square purple-square"></div>
+         <div id="D7" class="piece-square green-square"></div>
+         <div id="D8" class="piece-square dark-square"></div>
+         <div id="D9" class="piece-square light-square"></div>
+     
+         <div id="12" class="piece-square light-square"style='font-size:50px;'>&#8962;</div>
+         <div id="E2" class="piece-square dark-square"></div>  
+         <div id="17" class="piece-square green-square">&#x1F6AA;</div>
+         <div id="E4" class="piece-square gold-square"></div>
+         <div id="24" class="piece-square gold-square">&#128081;</div>
+         <div id="E6" class="piece-square gold-square"></div>
+         <div id="21" class="piece-square green-square">&#x1F6AA;</div>
+         <div id="E8" class="piece-square dark-square"></div>
+         <div id="4" class="piece-square light-square" style='font-size:50px;'>&#8962;</div>
+     
+         <div  id="F1" class="piece-square light-square"></div>
+         <div id="F2"  class="piece-square dark-square"></div>  
+         <div id="F3" class="piece-square green-square"></div>
+         <div id="F4" class="piece-square purple-square"></div>
+         <div id="F5" class="piece-square gold-square"></div>
+         <div id="F6" class="piece-square purple-square"></div>
+         <div id="F7" class="piece-square green-square"></div>
+         <div id="F8" class="piece-square dark-square"></div>
+         <div id="F9" class="piece-square light-square"></div>
+     
+         <div id="13" class="piece-square light-square">&#9822;</div>
+         <div id="G2" class="piece-square dark-square" ></div>
+         <div id="16" class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+         <div id="G4" class="piece-square green-square"></div>
+         <div id="23" class="piece-square green-square">&#x1F6AA;</div>
+         <div id="G6" class="piece-square green-square"></div>
+         <div id="22"class="piece-square green-square"style='font-size:25px;'>&#129681;</div>
+         <div  id="G8" class="piece-square green-square" style='font-size:50px;'>&#8606;</div>
+         <div id="3" class="piece-square teal-square">&#9822;</div>
+     
+         <div id="H1" class="piece-square light-square"></div>
+         <div id="H2" class="piece-square dark-square"></div>
+         <div id="H3" class="piece-square light-square" style='font-size:50px;'>&#8607;</div>
+         <div id="H4" class="piece-square dark-square"></div>
+         <div id="H5" class="piece-square dark-square"></div>
+         <div id="H6" class="piece-square dark-square"></div>
+         <div id="H7" class="piece-square dark-square" ></div>
+         <div id="H8" class="piece-square dark-square"></div>
+         <div id="H9" class="piece-square light-square"></div>
+     
+         <div id="14" class="piece-square light-square">&#10035;</div>
+         <div id="I2" class="piece-square light-square"></div>
+         <div id="15" class="piece-square teal-square" >&#9822;</div>
+         <div id="I4" class="piece-square light-square"></div>
+         <div id="0" class="piece-square light-square"style='font-size:50px;'>&#8962;</div>
+         <div id="I6" class="piece-square light-square"></div>
+         <div id="1" class="piece-square light-square" >&#9822;</div>
+         <div id="I8" class="piece-square light-square"></div>
+         <div id="2" class="piece-square light-square">&#10035;</div>
+       </div>
+       </div>
+     
+     
+     
+       <div class ="col-3 col-s-12">
+          <div id="replay" class="tossContainer" style="display: none;">
+             <div id="yourResult"></div>
+             <div id="winnersTable" class="stats">
+               <p id="firstPlace"></p>
+               <p id="secondPlace"></p>
+               <p id="thirdPlace"></p>
+               <p id="looser"></p>
+             </div>
+             <div class="tossButtons" >
+               <button class="tossButton" id="replay-button"   onclick="playAgain()">Play Again</button> 
+               <button class="tossButton" id="home-button"   onclick="home()">Home</button>  
+             </div>
+          
+          </div>
+         <div id="tossId" class="tossContainer">
+           
+            <div id="message"></div>
+            <div id="message2"></div>
+           <div class="coin" id="coin">
+             <div class="heads">
+              <img alt="head of coin" src="css/image/head.png">
+             </div>
+             <div class="tails">
+              <img alt="tail of coin" src="css/image/tails.png">
+             </div>
+           </div>
+          <div class="coin" id="coin2">
+            <div class="heads">
+              <img alt="head of coin" src="css/image/head.png">
+            </div>
+            <div class="tails">
+              <img alt="tail of coin" src="css/image/tails.png">
+            </div>
+          </div>
+          <div class="coin" id="coin3">
+            <div class="heads">
+              <img alt="head of coin"src="css/image/head.png">
+            </div>
+            <div class="tails">
+              <img alt="tail of coin"src="css/image/tails.png">
+            </div>
+          </div>
+          <div class="coin" id="coin4">
+           <div class="heads">
+              <img alt="head of coin" src="css/image/head.png">
+           </div>
+           <div class="tails">
+              <img alt="tail of coin" src="css/image/tails.png">
+           </div>
+          </div>
+       
+          <div class=stats>
+           <p id="heads-count">Heads: 0</p>
+           <p id="tails-count">Tails: 0</p>
+          </div>
+          <div id="moves"class=stats></div>
+          <div class="tossButtons" id="tossButtons" style="display: none;">
+           <button class="tossButton" id="flip-button"  onclick="flipCoins()">Flip Coins</button> 
+          </div>
+      
+        </div>
+      </div>
+     </div>
+  </div>
+     
+
+  <script src="/socket.io/socket.io.js"></script>
+ <script src="js/common.js"></script>   
+ <script src="js/tosser.js"></script>
+ <script src="js/board.js"></script>
+ <script src="js/turnMaker.js"></script>
+
+</body>
+
+</html>
